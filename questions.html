@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spirit Animal</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/quiz.css">
+        <script src="js/quiz.js"></script>
+    </head>
+    <body>
+        <h1 id="title">What's Your Spirit Animal?</h1>
+        <section id="question1">
+            <h4 id="question">1. If you could only eat one food for the rest of your life, which one would you choose?</h4>
+            <div class="container">
+                <div class="row question bank">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3 ">
+                        <input id="giraffe" class="animal" name="question1" type="image" src="apricots.jpg" onclick="recordAnswer(1,1);"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="beaver" class="animal" name="question1" type="image" src="corn.jpeg" onclick="recordAnswer(1,3);"/>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row question bank">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3">
+                        <input id="fox" class="animal" name="question1" type="image" src="crab.jpg" onclick="recordAnswer(1,2);" value="2"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="tiger" class="animal" name="question1" type="image" src="steak.jpg" onclick="recordAnswer(1,4);" value="4">
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </section>
+        <section id="question2">
+            <h4 id="question">2. What are you afraid of?</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img id="afraid-img" src="afraid.jpg"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <ul class="question bank">
+                            <li>
+                            <span>
+                                <input id="giraffe" name="question2" class="animal" type="checkbox" onclick="recordAnswer(2,1);"/>
+                            </span>
+                                Small spaces
+                            </li>
+                            <li>
+                            <span>
+                                <input id="fox" name="question2" class="animal" type="checkbox" onclick="recordAnswer(2,2);"/>
+                            </span>
+                                Other humans
+                            </li>
+                            <li>
+                            <span>
+                                <input id="beaver" name="question2" class="animal" type="checkbox" onclick="recordAnswer(2,3);""/>
+                            </span>
+                                Heights
+                            </li>
+                            <li>
+                            <span>
+                                <input id="tiger"  name="question2" class="animal" type="checkbox" onclick="recordAnswer(2,4);">
+                            </span>
+                                Fire
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </section>
+        <section id="question3">
+            <h4 id="question">3. What kind of element are you?</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <img id="elements-img" src="elements2.jpg"/>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="question bank">
+                            <li>
+                            <span>
+                                <input name="question3" id="fox" class="animal" type="radio" name="spirit-animal" value="fox"
+                                       onclick="recordAnswer(3,2);"/>
+                            </span>
+                                Fire
+                            </li>
+                            <li>
+                                <span>
+                                    <input name="question3" id="giraffe" class="animal" type="radio" name="spirit-animal" value="giraffe"
+                                       onclick="recordAnswer(3,1);"/>
+                                </span>
+                                Air
+                            </li>
+                            <li>
+                                <span>
+                                    <input ,name="question3" d="beaver" class="animal" type="radio" name="spirit-animal" value="beaver"
+                                       onclick="recordAnswer(3,3);"/>
+                                </span>
+                                Water
+                            </li>
+                            <li>
+                            <span>
+                                <input name="question3" id="tiger" class="animal" type="radio" name="spirit-animal" value="tiger"
+                                       onclick="recordAnswer(3,4);">
+                            </span>
+                                Earth
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question" id="question4">
+            <h4 id="question">4. What characteristic do people admire most about you?</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 options">
+                        <ul class="question bank">
+                            <li>
+                                <input name="question4" id="fox" class="animal" type="button" onclick="recordAnswer(4,2);"
+                                       value="Your humor"/>
+                            </li>
+                            <li>
+                                <input name="question4" id="giraffe" class="animal" type="button" onclick="recordAnswer(4,1);"
+                                       value="Your keen sense of perspective"/>
+                            </li>
+                            <li>
+                                <input name="question4" id="beaver" class="animal" type="button" onclick="recordAnswer(4,3);"
+                                       value="Your creativity"/>
+                            </li>
+                            <li>
+                                <input name="question4" id="tiger" class="animal" type="button" onclick="recordAnswer(4,4);"
+                                       value="Your courage">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </section>
+        <section class="question" id="question5">
+            <h4 id="question">5. If you had to live without one of your five senses, which one would you give up?</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img id="senses-img" src="senses.jpg"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <ul class="question bank">
+                            <li>
+                                <input type="radio" onclick="recordAnswer(5, 1);" name="question5"/>
+                                Sense of Smell
+                            </li>
+                            <li>
+                                <input type="radio" onclick="recordAnswer(5, 2);" name="question5"/>
+                                Sense of Sight
+                            </li>
+                            <li>
+                                <input type="radio" onclick="recordAnswer(5, 3);" name="question5"/>
+                                Sense of Taste
+                            </li>
+                            <li>
+                                <input type="radio" onclick="recordAnswer(5, 2);" name="question5"/>
+                                Sense of Touch
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </section>
+        <input type="submit" id="button" name="result" class="clickable" onclick="total();"/>
+         <div class="container">
+                <div class="row">
+                    <div class="col-sm-12" id="result"></div>
+                </div>
+         </div>
+    </body>
+</html>

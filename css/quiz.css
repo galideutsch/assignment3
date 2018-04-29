@@ -1,0 +1,165 @@
+body {
+    text-align:center;
+    background: #ffbea4;
+    color: #616161;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#title {
+    font-family: 'Megrim', Arial, cursive;
+    margin-top:25px;
+    margin-bottom:5px;
+    -webkit-text-size-adjust: auto;
+}
+
+.col-sm-12 {
+    margin-bottom:13px;
+    font-size:16px;
+}
+
+#button {
+    font-family: 'Permanent Marker', Arial, cursive;
+    border: none;
+    background: rgba(97, 97, 97, 0.9);
+    padding: 10px 15px;
+    box-shadow: 6px 6px 16px 0px rgba(173, 94, 67, 1);
+    text-align: center;
+    color:ghostwhite;
+}
+
+#button a {
+    text-decoration:none;
+    color:ghostwhite;
+}
+
+#button a:hover, #button:hover{
+    color: rgb(213, 255, 238);
+}
+
+#question {
+    margin-top:25px;
+}
+
+.question.bank {
+    margin-bottom:20px;
+}
+
+#wolf-man-img {
+    width:78%;
+}
+
+#main {
+    background-image: url("../geo.png");
+    background-size: 750px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#subtitle {
+    margin-bottom: 20px;
+}
+
+.col-sm-3 {
+    height: 200px;
+}
+
+.animal {
+    width:100%;
+}
+
+#question1 .animal:hover {
+    opacity:0.5;
+}
+
+#afraid-img {
+    width:65%;
+}
+
+#question2 .question.bank li{
+    display:inline-block;
+    position:relative;
+    list-style-type:none;
+    margin: 10px 5px 0;
+}
+
+#elements-img {
+    width:100%;
+}
+
+#question3 .container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#question3 .question.bank, #question5 .question.bank {
+    padding:0;
+}
+
+#question3 .question.bank li {
+    list-style-type:none;
+    margin-top: 10px;
+}
+
+#question3 .col-sm-12 {
+    text-align:center;
+}
+
+#question4 .question.bank li {
+    width:300px;
+    list-style-type:none;
+    margin-top: 10px;
+}
+
+#question4 .options {
+    padding:0;
+}
+
+#question4 input:focus {
+    background-color: rgba(173, 94, 67, 0.3);
+}
+
+#question5 .question.bank li{
+    margin-bottom: 10px;
+    margin-left:100px;
+}
+
+#question5 .container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.col-sm-12 {
+    text-align:center;
+}
+
+#question5 .col-sm-4 {
+    height:125px;
+}
+
+.result {
+    padding:20px;
+}
+
+#senses-img {
+    width:70%;
+}
+
+#question5 li {
+    list-style-type: none;
+}
+
+#question4 {
+    padding-top:20px;
+}
+
+#question5 ul {
+    margin-left:20px;
+}
